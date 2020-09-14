@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.MB@home/page.com</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <style>
+      .dark-mode {
+          background-color: black;
+          color: green;
+      }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+      <div class="bg_shadow"></div>
+        <div class="sidebar__inner">
+           <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="profile_info">
+            <div class="profile_img">
+              <img src="images/mainprofile.jpg" alt="profile_img">
+            </div>
+            <div class="profile_data">
+                <p class="name">Michael Douglas</p>  
+                <p class="role">Web App & A.I</p>
+                <div class="btn" onclick="myFunction()">Dark Mode</div>
+                <script>
+                  function myFunction() {
+                  var element = document.body;
+                  element.classList.toggle("dark-mode");
+                  }
+                </script>
+            </div>
+        </div>
+        <ul class="siderbar_menu">
+            <li><a href="aboutme.html" class="active">
+              <div class="icon"><i class="fas fa-info-circle"></i></div>
+              <div class="title">ABOUT ME</div>
+              </a></li>  
+          <li><a href="mycard.html">
+              <div class="icon"><i class="fas fa-camera-retro"></i></div>
+              <div class="title">GALLERY</div>
+              </a></li>  
+          <li><a href="index2.html">
+              <div class="icon"><i class="fa fa-th-large" aria-hidden="true"></i></div>
+              <div class="title">SHORT CUT</div>
+              </a></li>  
+          <li><a href="socialmedia.html">
+              <div class="icon"><i class="fas fa-hashtag"></i></i></div>
+              <div class="title">PLATFORMS</div>
+              </a></li>  
+          <li><a href="contact.html">
+              <div class="icon"><i class="fas fa-phone-square"></i></div>
+              <div class="title">CONTACTS</div>
+              </a></li>  
+        </ul>
+      </div>
+    </div>
+    <div class="main_container">
+      <div class="top_navbar">
+          <div class="hamburger">
+              <div class="hamburger__inner">
+                  <i class="fas fa-bars"></i>  
+              </div>  
+          </div>
+         <ul class="menu">
+            <li><a href="#" class="active"><i class="fas fa-calendar">EVENTS</i></a></li>
+            <li><a href="#"><i class="fas fa-coffee">SERVICES</i></a></li>
+         </ul>
+         <ul class="right_bar">
+            <li><i class="fas fa-search"></i></li>
+            <li><i class="fas fa-sign-out-alt"></i></li> 
+         </ul>
+      </div>
+      <script>
+        $(".hamburger .fas").click(function(){
+        $(".wrapper").addClass("active")
+    })
+
+        $(".wrapper .sidebar .close").click(function(){
+        $(".wrapper").removeClass("active")
+    })
+    </script>
+      <div class="container">
+        <div class="item">
+          <h3>INTRODUCTION</h3>
+          Hi there welcome back. Am Michael Douglas a.k.a Michabrand. This being my fist project, have worked on it and ensure everything works perfect. Some content are under editing but am sure you gonna like them. Here are some quick guide-stay connected.
+        </div>
+        <div class="item">
+          <h3>ABOUT ME PAGE</h3>
+          The page is written in summary only to make you understand the scope of lifetime. This page contains very useful information that is the journey of technology. Need to know me better, visit the shortcut page, see yoh.
+        </div>
+        <div class="item">
+          <h3>GALLERY PAGE</h3>
+          This page my contain natural images but the images will be uploaded soon and get in touch with them. briefly it is make of cards. When open the page with laptop you will need hover effect of mouse pointer. When open with smartphones just tap the card-good to go.
+        </div>
+        <div class="item">
+          <h3>SHORTCUT PAGE</h3>
+          This page is awesome since it provides ease of access to my biography. Some contents may be not yet uploaded but you will figure the way out of accessing them right when is made, Kindly please the information written is pure facts, some are of funs and others helpfull too. Kindlyvisit the page and get entertained.
+        </div>
+        <div class="item">
+          <h3>PLATFORM PAGE</h3>
+          Here is where another module of cards are in function, When the page is open in window or laptop just hover the mouse pointer over the card(s) and it will flip showing my social media platforms. Using smartforms please tap the card and it will flip showing social media platforms. tap any and it will direct you to my social apps.
+        </div>
+        <div class="item">
+          <h3>CONTACT PAGE</h3>
+          If you need to leave your feedback, use this form. Your comments are highly valuable for the mantain or update of information to this website. Feel free to send emails. This website is privacy protected when signing in. I will only recieve your email message. Other data you use in this forms is your privacy.
+        </div>
+        <div class="item">
+          <h3>SERVICES AND EVENTS </h3>
+          This programs are only accessible when you use your PC. Currently looking in to compatibility of searching content will be available at your hand. Feel free to enjoy other services that are found in shortcut web page. 
+        </div>
+        <div class="item">
+          <h3>MY RECOMMENTATION</h3>
+          Feel free to experience any that it take to a world of technology. This website will soon be containing other functions of machine leraning and the chatbox you will be interracting with to solve any task you need eg-uploading your files, learning with quick reviews and much more... 
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Jump To Top</button>
+                <script>
+                  var mybutton = document.getElementById("myBtn");
+                  window.onscroll = function() {scrollFunction()};
+
+                  function scrollFunction() {
+                  if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+                  mybutton.style.display = "block";
+                  } else {
+                  mybutton.style.display = "none";
+                  }
+                 }
+                  function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+    </div>
+  </div>
+  <section class="footer">
+  <h5 style="color: white; text-align: center; padding-top: 50px;">&copy;2020@MB||All rights reserved.</h5>
+  </section>
+</body>
+</html>

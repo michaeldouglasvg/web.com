@@ -1,0 +1,170 @@
+/* cascading style one for index2.html */
+body{
+    background: rgb(34, 32, 32);
+    height: 100vh;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+div nav{
+    display: none;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    height: 100%;
+    gap: 10px;
+    box-sizing: border-box;
+    background: url(images/gallery1front.jfif)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 2px;
+}
+.log-in{
+    background: linear-gradient(270deg, rgb(117, 99, 218) 0%, rgb(51, 216, 59) 35%, rgb(176, 15, 224) 100%,rgb(117, 99, 218) 0%, rgb(51, 216, 59) 35%, rgb(176, 15, 224) 100%);
+    padding-left: 10px;
+    box-shadow: 10px rgb(36, 35, 35);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+button{
+    padding: 10px;
+    background-color: rgb(181, 114, 245);
+    color: orangered;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    left: 1px;
+}
+button:hover{
+    color:black;
+    background-color: greenyellow;
+}
+button a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.log-in:hover{
+    background: linear-gradient(180deg, rgb(208, 99, 218) 0%, rgb(51, 216, 59) 35%, rgb(176, 15, 224) 100%);
+    color: white;
+}
+.partition{
+    display: flexbox;
+    height: 80%;
+}
+.image{
+    order: 1;
+}
+img.center-fit:hover{
+    cursor: pointer;
+    animation: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -webkit-animation: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+.text{
+    padding-left: 2px;
+    order: 2;
+}
+img:hover{
+    animation: marquee 0s linear infinite;
+    -webkit-animation: marquee 0s linear infinite;
+}
+h3{
+    text-align: center;
+    padding-top: 1px;
+    animation: marquee 5s linear infinite;
+}
+h1{
+    text-align: center;
+    padding-top: 5px;
+}
+.marquee:hover{
+    background-color: indigo;
+    border-radius: 15px;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color:linear-gradient(90deg, rgb(208, 99, 218) 0%, rgb(51, 216, 59) 35%, rgb(176, 15, 224) 100%);
+    cursor: pointer;
+    -webkit-transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 33px;
+  left: 5px;
+  z-index: 99;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#myBtn:hover {
+  color: green;
+}
+@media screen and (max-width: 1100px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        height: 100%;
+        gap: 10px;
+        box-sizing: border-box;
+        background: linear-gradient(180deg, rgb(208, 99, 218) 0%, rgb(51, 216, 59) 35%, rgb(123, 15, 224) 100%);
+        padding-left: 2px;
+    }
+    .partition{
+        display: flexbox;
+        height: 80%;
+    }
+}
+@media screen and (max-width: 998px){
+    .nav-bar{
+        display: none;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        height: 100%;
+        gap: 10px;
+        box-sizing: border-box;
+        background: linear-gradient(180deg, rgb(208, 99, 218) 0%, rgb(51, 216, 59) 35%, rgb(123, 15, 224) 100%);
+        padding-left: 2px;
+    }
+    .partition{
+        display: flexbox;
+        height: 80%;
+    }
+}
+@media screen and (max-width: 760px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 96%);
+        margin: 1%;
+        height: 100%;
+        gap: 10px;
+        box-sizing: border-box;
+        background: linear-gradient(180deg, rgb(208, 99, 218) 0%, rgb(51, 216, 59) 35%, rgb(123, 15, 224) 100%);
+        padding-left: 2px;
+    }
+    .partition{
+        display: flexbox;
+        height: 80%;
+    }
+}
