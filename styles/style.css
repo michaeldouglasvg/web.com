@@ -224,15 +224,15 @@ body {
 .search{
   position: absolute;
   overflow: hidden;
-  top: 15px;
+  top: 10px;
   right: 20px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background: green;
   border-radius: 15px;
 }
 .search .input{
-  padding: 0px 30px;
+  padding: 2px 30px;
   margin: 8px auto;
   border: none;
   outline-style: none;
@@ -249,7 +249,6 @@ body {
 }
 .search:hover{
   animation: fade 1s ease forwards;
-  width: 60%;
 }
 .wrapper .main_container .top_navbar .right_bar li:hover,
 .wrapper .main_container .top_navbar .hamburger .fas:hover {
@@ -312,7 +311,7 @@ body {
 
 @keyframes fade{
   from{ width: 30px;}
-  to{ width: 60%;}
+  to{ width: 75%;}
 }
 @media screen and (max-width: 800px){
   .wrapper .sidebar__inner{
