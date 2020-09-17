@@ -215,13 +215,42 @@ body {
 .wrapper .main_container .top_navbar .right_bar li {
   margin: 0 10px;
 }
-
 .wrapper .main_container .top_navbar .right_bar .fas {
-  font-size: 25px;
+  font-size: 20px;
+  padding-top: 5px;
   cursor: pointer;
   color: #88a3d0;
 }
-
+.search{
+  position: absolute;
+  overflow: hidden;
+  top: 15px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: green;
+  border-radius: 15px;
+}
+.search .input{
+  padding: 0px 30px;
+  margin: 8px auto;
+  border: none;
+  outline-style: none;
+  background: green;
+  color: black;
+}
+.search i{
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: orangered;
+  padding: 10px;
+  z-index: 1;
+}
+.search:hover{
+  animation: fade 1s ease forwards;
+  width: 60%;
+}
 .wrapper .main_container .top_navbar .right_bar li:hover,
 .wrapper .main_container .top_navbar .hamburger .fas:hover {
   opacity: 0.5;
@@ -281,6 +310,10 @@ body {
   background-color: rgb(32, 240, 32);
 }
 
+@keyframes fade{
+  from{ width: 30px;}
+  to{ width: 60%;}
+}
 @media screen and (max-width: 800px){
   .wrapper .sidebar__inner{
     left: -100%;
