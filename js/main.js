@@ -6,8 +6,8 @@ $(document).ready(function(){
       console.log(value);
       $(".item, h3, p").filter(function() {
 
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-
+      var word = $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+       
       });
 
     });
