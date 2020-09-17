@@ -232,8 +232,10 @@ body {
   border-radius: 15px;
 }
 .search .input{
-  padding: 2px 30px;
-  margin: 8px auto;
+  margin-top: 8px;
+  padding: 2px 5px;
+  margin-left: 10px;
+  width: 90%;
   border: none;
   outline-style: none;
   background: green;
@@ -311,7 +313,7 @@ body {
 
 @keyframes fade{
   from{ width: 30px;}
-  to{ width: 75%;}
+  to{ width: 50%;}
 }
 @media screen and (max-width: 800px){
   .wrapper .sidebar__inner{
@@ -335,6 +337,30 @@ body {
   .wrapper.active .sidebar .bg_shadow{
     visibility: visible;
     opacity: 0.7;
+  }
+  .search .input{
+    padding: 2px 5px;
+    margin-left: 3px;
+    width: 80%;
+    border: none;
+    outline-style: none;
+    background: green;
+    color: black;
+  }
+  .search i{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: orangered;
+    padding: 10px;
+    z-index: 1;
+  }
+  .search:hover{
+    animation: fade 1s ease forwards;
+  }
+  @keyframes fade{
+    from{ width: 30px;}
+    to{ width: 50%;}
   }
 }
 
@@ -368,4 +394,29 @@ body {
   font-size: 20px;
   margin-bottom: 5px;
 }
+.search .input{
+  padding: 2px 5px;
+  margin-left: 10px;
+  width: 85%;
+  border: none;
+  outline-style: none;
+  background: green;
+  color: black;
+}
+.search i{
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: orangered;
+  padding: 10px;
+  z-index: 1;
+}
+.search:hover{
+  animation: fade 1s ease forwards;
+}
+@keyframes fade{
+  from{ width: 30px;}
+  to{ width: 80%;}
+}
+
 }
