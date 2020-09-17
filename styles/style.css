@@ -285,7 +285,7 @@ body {
   opacity: 0.5;
 }
 .footer{
-  position: relative;
+  position: fixed;
   bottom: 0;
   height: 90px;
   background: black;
