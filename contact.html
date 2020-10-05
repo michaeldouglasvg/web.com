@@ -49,18 +49,21 @@
   <div class="title">
     <h3 style="color: white; text-align: center;">Contact Me Through...</h3>
   </div>
-  <div class="contact-form" id="form">
-    <div class="input-fields">
-      <input type="text" class="input" id="name" placeholder="Name">
-      <input type="text" class="input" id="email" placeholder="Email Address">
-      <input type="text" class="input" id="phone" placeholder="Phone">
-      <input type="text" class="input" id="subject" placeholder="Subject">
+  <form action="myadmin/information_added.php" method="post">
+    <b></b>
+    <div class="contact-form" id="form">
+      <div class="input-fields">
+        <input type="text" class="input" id="name" name="name" placeholder="Name" maxlength="25">
+        <input type="text" class="input" id="email" name="email" placeholder="Email Address" maxlength="40">
+        <input type="text" class="input" id="phone" name="phone" placeholder="Phone" maxlength="15">
+        <input type="text" class="input" id="subject" name="subject" placeholder="Subject" maxlength="40">
+      </div>
+      <div class="msg">
+        <textarea placeholder="Message" maxlength="180" name="message"></textarea>
+        <div class="btn" id="submit" name="submit">send</div>
+      </div>
     </div>
-    <div class="msg">
-      <textarea placeholder="Message"></textarea>
-      <div class="btn" id="submit">send</div>
-    </div>
-  </div>
+</form>
   
 </div>
 <a class="back" href="index.html">back</a>
