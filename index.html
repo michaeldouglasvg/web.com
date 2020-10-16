@@ -11,7 +11,6 @@
 </head>
 <body>
     <div class="outer-container">
-        <h3 class="outer">WELCOME TO MY WEBSITE</h3>
         <article>
             <marquee behavior="" direction="left"><h1 style="color:orange">Real Name: Michael Douglas</h1></marquee>
             <div class="main">
@@ -24,7 +23,7 @@
                 <h2>ALTERNATIVELY...</h2>
                  <p>The folowing are my sociomedia icons which you can access easily anytime be asured of flexibility. if interested in technology we can converge mind and make it greater. Bridge is now...</p>
             </div>
-            <img src="images/shortcut1.jfif" alt="" width="40%" >
+            <img src="images/couples.jpg" alt="" width="100%" >
                  <div class="links">
                         <a href="https://www.facebook.com/volviendo.gracias"> <i class="fab fa-facebook" style="font-size: 30px;"></i></a>
                          <a href="https://www.instagram.com/glacias9/"><i class="fab fa-instagram" style="font-size: 30px;"></i></a>
@@ -40,6 +39,26 @@
                 <h3>&copy;2020MB || All rights reserved.</h3>
             </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+    function addDarkmodeWidget() {
+        const options = {
+            bottom: '570px', // default: '32px'
+            right: '6px', // default: '32px'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: 'orange',  // default: '#fff'
+            buttonColorDark: 'dark',  // default: '#100f2c'
+            buttonColorLight: 'white', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '<i class="fas fa-moon"></i>', // default: ''
+            autoMatchOsTheme: true // default: true
+          }
+          
+          const darkmode = new Darkmode(options);
+          darkmode.showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+    </script>
 </body>
 </html>
