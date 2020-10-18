@@ -63,32 +63,32 @@ body{
     background-size: cover;
  }
  .the-card:nth-child(1) .card-back {
-    background: url(../images/gallery1back.jfif)no-repeat;
+    background: url(../images/babys.jpg)no-repeat;
     background-position: center;
     background-size: cover;
  }
  .the-card:nth-child(2) .card-back {
-    background: url(../images/gallery2back.jfif)no-repeat;
+    background: url(../images/backperson.jpg)no-repeat;
     background-position: center;
     background-size: cover;
  }
  .the-card:nth-child(3) .card-back {
-    background: url(../images/gallery3back.jfif)no-repeat;
+    background: url(../images/campying2.jpg)no-repeat;
     background-position: center;
     background-size: cover;
  }
  .the-card:nth-child(4) .card-back {
-    background: url(../images/gallery4back.jfif)no-repeat;
+    background: url(../images/citynight.jpg)no-repeat;
     background-position: center;
     background-size: cover;
  }
  .the-card:nth-child(5) .card-back {
-    background: url(../images/gallery5back.jfif)no-repeat;
+    background: url(../images/couples.jpg)no-repeat;
     background-position: center;
     background-size: cover;
  }
  .the-card:nth-child(6) .card-back {
-    background: url(../images/gallery6back.jfif)no-repeat;
+    background: url(../images/bridge.jpg)no-repeat;
     background-position: center;
     background-size: cover;
  }

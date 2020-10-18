@@ -63,7 +63,7 @@ body{
     background-size: cover;
  }
  .the-card:nth-child(1) .card-back {
-    background: url(../images/gallery1back.jfif)no-repeat;
+    background: url(../images/bikeman.jpg)no-repeat;
     background-position: center;
     background-size: cover;
  }
@@ -73,7 +73,7 @@ body{
     background-size: cover;
  }
  .the-card:nth-child(3) .card-back {
-    background: url(../images/gallery3back.jfif)no-repeat;
+    background: url(../images/campyong.jpg)no-repeat;
     background-position: center;
     background-size: cover;
  }
