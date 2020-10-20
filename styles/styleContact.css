@@ -9,7 +9,7 @@
 }
 
 body{
-  background: url(/images/backperson.jpg) no-repeat;
+  background: url(../images/backperson.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
